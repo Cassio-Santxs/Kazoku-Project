@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kazoku Sushi Bar</title>
+
+    <!-- STYLE -->
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Otomanopee+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <a class="logo" href="#home"><span>Kazoku</span> Sushi Bar</a>
+    </header>
+
+    <nav class="container">
+      <ul>
+        <li><a class="title" href="#home">Início</a></li>
+        <li><a class="title" href="#about">Sobre nós</a></li>
+        <li><a class="title" href="#services">Cardápio</a></li>
+        <li><a class="title" href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+
+    <main id="home">
+      <a href="#home"><img src="./imgs/kazoku.png" alt="logo kazoku" /></a>
+      <div class="form">
+        <form id="form" action="" method="POST">
+          <fieldset class="login">
+            <p class="login">LOGIN</p>
+            <label class="input" for="email">email</label>
+            <br />
+            <input
+              class="input"
+              type="email"
+              name="email"
+              id="email"
+              required
+              autocomplete="email"
+              tabindex="1"
+            />
+            <br />
+            <label class="input" for="password">senha</label>
+            <br />
+            <input
+              class="input"
+              type="password"
+              name="password"
+              id="password"
+              required
+              tabindex="2"
+            />
+            <br />
+            <br />
+            <a class="enter" href="#">entrar</a>
+            <p class="guest">
+              ou entrar como
+              <a href=""><span class="redguest">convidado</span></a>
+            </p>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

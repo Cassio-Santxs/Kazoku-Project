@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+:root {
+  --base-color: red;
+  --background-color: black;
+  --text-color: white;
+  --shade-color: rgba(0, 0, 0, 0.35);
+}
+
+/* HEADER */
+
+#header {
+  margin: auto;
+  display: flex;
+  width: 100%;
+  z-index: 2;
+}
+
+img {
+  width: 22%;
+  height: 22%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.logo {
+  width: 100%;
+  margin: 1rem 0 2rem 0rem;
+  color: var(--background-color);
+  border-bottom: var(--base-color) solid 5px;
+  text-decoration: none;
+  padding: 0.25rem 0 1rem 0.5rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* BASE */
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font: 400 1.875rem 'Anton', sans-serif;
+  background-color: var(--text-color);
+}
+
+span {
+  color: red;
+}
+
+.form {
+  text-align: center;
+  font: 400 1.3rem 'Anton', sans-serif;
+}
+
+fieldset {
+  display: inline-block;
+  padding: 1rem 4rem 5rem 4rem;
+  border: var(--background-color) solid 5px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 30px var(--shade-color);
+}
+
+label {
+  font-weight: 500;
+  color: var(--background-color);
+}
+
+.input {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  text-decoration: none;
+  border-bottom: var(--base-color) 2.5px solid;
+  border-radius: 5px;
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  padding: 0.2rem;
+  margin-bottom: 3rem;
+}
+
+#email {
+  margin-bottom: 3rem;
+}
+
+#password {
+  margin-bottom: 3rem;
+}
+
+fieldset p {
+  margin-top: 2rem;
+  margin-bottom: 3.5rem;
+  font: 400 1.2rem 'Anton', sans-serif;
+  border-bottom: var(--base-color) solid 5px;
+  border-top: var(--base-color) solid 5px;
+  padding: 1rem;
+  border-radius: 15px;
+  color: var(--background-color);
+  font-size: 1.7rem;
+}
+
+.enter {
+  text-decoration: none;
+  color: var(--background-color);
+  border: var(--base-color) solid 5px;
+  padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+  margin-top: 2rem;
+  transition: 0.2s;
+  border-radius: 15px;
+}
+
+.guest {
+  margin-top: 2rem;
+  border: 0;
+  font-size: 0.8rem;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+.enter:hover {
+  background-color: var(--base-color);
+}
+
+/* NAV */
+
+nav ul li {
+  font-size: 1rem;
+  display: inline-block;
+  padding-left: 3rem;
+  padding-right: 0;
+  padding-bottom: 3rem;
+  text-align: center;
+  justify-content: space-between;
+}
+
+nav ul li a {
+  color: var(--background-color);
+  font: 400 1rem 'Anton', sans-serif;
+}
